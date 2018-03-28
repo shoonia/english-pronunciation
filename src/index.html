@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English Pronunciation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+    <section class="section">
+        <div class="container">
+            <div class="buttons has-addons">
+                <button id="btn-clear" type="button" class="button is-danger">Clear</button>
+                <button id="btn-write" type="button" class="button is-info">Write</button>
+            </div>
+            <div class="field">
+                <textarea id="text-in" rows="2" class="textarea" autofocus></textarea>
+            </div>
+            <form id="lang" class="control">
+                <label class="radio">
+                    <input type="radio" name="lang" value="us" checked> US
+                </label>
+                <label class="radio">
+                    <input type="radio" name="lang" value="uk"> UK
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div id="text-out" class="content text-out">
+                Example text, double click to selection and playing words
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
