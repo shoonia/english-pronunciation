@@ -1,5 +1,5 @@
 const audioCache = new Map();
-const errorCache = new Map();
+const errorCache = new Set();
 
 export async function playAudio (accent, word) {
     const key = `${accent}:${word}`;
@@ -17,7 +17,7 @@ export async function playAudio (accent, word) {
         await audio.play();
         audioCache.set(key, audio);
     } catch (e) {
-        errorCache.set(key, false);
+        errorCache.add(key);
     }
 }
 
