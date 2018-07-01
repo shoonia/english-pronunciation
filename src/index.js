@@ -23,8 +23,9 @@ function changeLang (event) {
 }
 
 function clearContent () {
-    area.value = '';
     output.innerHTML = '';
+    area.value = '';
+    area.focus();
 }
 
 function writeContent () {
